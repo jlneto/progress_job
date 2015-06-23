@@ -23,8 +23,8 @@ module ProgressJob
       update_progress(step: step)
     end
 
-    def update_progress_max(progress_max)
-      update_column(@job,:progress_max, progress_max)
+    def update_progress_max(max)
+      update_column(@job, :progress_max, max)
     end
 
     def error(job, exception)
