@@ -31,7 +31,7 @@ module ProgressJob
       update_column(job,:progress_stage, exception.message)
     end
 
-    def update_column(job, col,value)
+    def update_column(job, col, value)
       job[col] = value
       job.save
     end
