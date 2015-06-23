@@ -11,7 +11,7 @@ module ProgressJob
     end
 
     def update_progress(step = 1)
-      update_column(@job,:progress_current, @job.progress_current + step)
+      update_column(@job,:progress_current, @job[:progress_current] + step)
     end
 
     def update_stage(stage)
